@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  itmg-manager-node:
+    build:
+      context: docker/node
+    volumes:
+      - './:/var/www/html:rw'
+    ports:
+      - '3000:3000'
+      - '8000:8000'
+    working_dir: /var/www/html
+    container_name: itmg-manager-node
