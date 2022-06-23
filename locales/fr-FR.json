@@ -1,0 +1,50 @@
+{
+  "pages": {
+    "home": "Accueil",
+    "other": {
+      "menu": "Other Page",
+      "desc": "An example of other pages"
+    },
+    "not-found": "Page non trouvée"
+  },
+  "intro": {
+    "desc": "Welcome to Vitailse, Vite starter template with {tailwindurl}",
+    "github": "Please give stars and report any issues on our {githuburl}"
+  },
+  "login": {
+    "header": "Me connecter à mon compte",
+    "form": {
+      "email": {
+        "title": "Email",
+        "placeholder": "Veuillez saisir votre adresse email"
+      },
+      "password": {
+        "title": "Mot de passe",
+        "placeholder": "Veuillez saisir votre mot de passe",
+        "forget": "Mot de passe oublié ?"
+      },
+      "submit": "Connexion"
+    },
+    "no-account": {
+      "no-account-yet": "Vous n'avez pas de compte ?",
+      "contact-your-csm": "Contactez votre chargé de compte"
+    }
+  },
+  "common": {
+    "logout": "Déconnexion",
+    "settings": "Paramètres"
+  },
+  "sidebar": {
+    "my-account": {
+      "company": "Mon Entreprise",
+      "invoices": "Factures",
+      "contracts": "Mes Contrats"
+    }
+  },
+  "user": {
+    "roles": {
+      "ROLE_SUPER_ADMIN": "Super-Administrateur"
+    }
+  }
+
+}

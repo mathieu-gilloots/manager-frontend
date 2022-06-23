@@ -1,12 +1,11 @@
 <script setup lang="ts">
-// import { useStore } from '@/store';
 
 useHead({
-  title: 'Vitailse | Opinionated vite starter template',
+  title: 'Dashboard | ITMG-Cloud',
 });
 
-// const store = useStore();
 const { t } = useI18n();
+
 </script>
 
 <script lang="ts">
@@ -21,6 +20,7 @@ export default {
       <p class="lg:text-left text-center">
         {{ t('intro.desc') }}
         <a href="https://tailwindcss.com/" class="text-blue-500 hover:underline">TailwindCSS</a>
+        {{ $auth.user() }}
       </p>
       <p class="text-center">
         {{ t('intro.github') }}
@@ -32,6 +32,11 @@ export default {
   </div>
 </template>
 
-<route lang="yaml">
-name: home
+<route lang="json">
+{
+  "name": "home",
+  "meta": {
+    "auth": true
+  }
+}
 </route>

@@ -41,7 +41,16 @@ export default defineConfig({
         'vue/macros',
         '@vueuse/core',
         '@vueuse/head',
+        'pinia',
         // custom
+        {
+          '@/store': [
+            'useStore'
+          ],
+          '@websanova/vue-auth/src/v3.js': [
+            'useAuth'
+          ]
+        }
       ],
 
       // custom resolvers
