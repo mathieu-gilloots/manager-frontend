@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "./dist",
     "baseUrl": ".",
     "module": "ESNext",
     "target": "ESNext",
@@ -19,7 +20,8 @@
       "vite-plugin-pages/client",
       "vite-plugin-vue-layouts/client",
       "unplugin-icons/types/vue",
-      "@intlify/vite-plugin-vue-i18n/client"
+      "@intlify/vite-plugin-vue-i18n/client",
+      "@websanova/vue-auth/types"
     ],
     "paths": {
       "~/*": ["src/*"],

@@ -1,26 +1,25 @@
 <script setup lang="ts">
-import { useStore } from '@/store';
 
 defineEmits(['toggle-sidebar']);
 
 const store = useStore();
 
-const { availableLocales } = useI18n();
+// const { availableLocales } = useI18n();
 
 const preferedDark = usePreferredDark();
 const isDark = useStorage('isDark', preferedDark.value);
 const body = ref<HTMLBodyElement | null>(null);
 
-const toggleDarkMode = () => {
-  if (body.value) {
-    if (isDark.value) {
-      body.value.classList.remove('dark');
-    } else {
-      body.value.classList.add('dark');
-    }
-  }
-  isDark.value = !isDark.value;
-};
+// const toggleDarkMode = () => {
+//   if (body.value) {
+//     if (isDark.value) {
+//       body.value.classList.remove('dark');
+//     } else {
+//       body.value.classList.add('dark');
+//     }
+//   }
+//   isDark.value = !isDark.value;
+// };
 
 onMounted(async () => {
   await nextTick();

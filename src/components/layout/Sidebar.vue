@@ -416,7 +416,7 @@
                       >
                         <span
                           class="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200"
-                          >Paramètres</span
+                          >{{ $t('common.settings') }}</span
                         >
                       </a>
                     </li>
@@ -430,7 +430,7 @@
                       >
                         <span
                           class="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200"
-                          >Mon entreprise</span
+                          >{{ $t('sidebar.my-account.company') }}</span
                         >
                       </a>
                     </li>
@@ -444,7 +444,7 @@
                       >
                         <span
                           class="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200"
-                          >Factures</span
+                          >{{ $t('sidebar.my-account.invoices') }}</span
                         >
                       </a>
                     </li>
@@ -458,7 +458,7 @@
                       >
                         <span
                           class="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200"
-                          >Mes contrats</span
+                          >{{ $t('sidebar.my-account.contracts') }}</span
                         >
                       </a>
                     </li>
@@ -574,20 +574,20 @@
 </template>
 
 <script setup lang="ts">
-import { useStore } from '@/store';
+
 import ITMGLogo32 from '../../assets/logo-32.png';
 
 const store = useStore();
 
-const trigger = ref(null);
-const sidebar = ref(null);
+const trigger = ref<HTMLButtonElement>();
+const sidebar = ref<HTMLDivElement>();
 
 const currentRoute = useRouter().currentRoute.value;
 
 const emit = defineEmits(['close-sidebar']);
 
 // close on click outside
-const clickHandler = ({ target }) => {
+const clickHandler = ({ target }: {target: any}) => {
   if (!sidebar.value || !trigger.value) return;
   if (!store.$state.sidebarOpen || sidebar.value.contains(target) || trigger.value.contains(target))
     return;
@@ -595,7 +595,7 @@ const clickHandler = ({ target }) => {
 };
 
 // close if the esc key is pressed
-const keyHandler = ({ keyCode }) => {
+const keyHandler = ({keyCode} : {keyCode: Number}) => {
   if (!store.$state.sidebarOpen || keyCode !== 27) return;
   emit('close-sidebar');
 };
@@ -613,11 +613,15 @@ onUnmounted(() => {
 watch(
   () => store.sidebarExpanded,
   () => {
-    if (store.$state.sidebarExpanded) {
-      document.querySelector('body').classList.add('sidebar-expanded');
-    } else {
-      document.querySelector('body').classList.remove('sidebar-expanded');
+    let bodySelector = document.querySelector('body');
+    if(bodySelector !== null) {
+      if (store.$state.sidebarExpanded) {
+        bodySelector.classList.add('sidebar-expanded');
+      } else {
+        bodySelector.classList.remove('sidebar-expanded');
+      }
     }
+
   }
 );
 </script>
