@@ -8,6 +8,7 @@ import Icons from 'unplugin-icons/vite';
 import AutoImport from 'unplugin-auto-import/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,6 +20,7 @@ export default defineConfig({
         IconsResolver({
           prefix: 'icon',
         }),
+        ElementPlusResolver()
       ],
     }),
     Icons({
@@ -44,6 +46,11 @@ export default defineConfig({
         'pinia',
         // custom
         {
+          'axios': [
+            // default imports
+            ['default', 'axios'], // import { default as axios } from 'axios',
+            'AxiosResponse'
+          ],
           '@/store': [
             'useStore'
           ],
@@ -52,6 +59,8 @@ export default defineConfig({
           ]
         }
       ],
+
+      resolvers: [ElementPlusResolver()],
 
       // custom resolvers
       // see https://github.com/antfu/unplugin-auto-import/pull/23/

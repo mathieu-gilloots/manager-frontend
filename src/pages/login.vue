@@ -59,23 +59,25 @@ export default {
                         <div class="space-y-2">
                             <label for="email" class="text-gray-700">{{ t('login.form.email.title') }}</label>
                             <input  type="email" name="email" v-model="state.username" id="email" :placeholder="t('login.form.email.placeholder')"
-class="block w-full px-4 py-3 rounded-md border border-gray-300 text-gray-600 transition duration-300
-    focus:ring-2 focus:ring-sky-300 focus:outline-none
-    invalid:ring-2 invalid:ring-red-400"
+                                    class="block w-full px-4 py-3 rounded-md border border-gray-300 text-gray-600 transition duration-300
+                                        focus:ring-2 focus:ring-sky-300 focus:outline-none
+                                        invalid:ring-2 invalid:ring-red-400"
+                                    tabindex="0"
                             >
                         </div>
 
                         <div>
                             <div class="flex items-center justify-between">
                                 <label for="pwd" class="text-gray-700">{{ t('login.form.password.title') }}</label>
-                                <button class="p-2 -mr-2" type="reset">
-<span class="text-sm text-sky-500">{{ t('login.form.password.forget') }}</span>
-                                </button>
+                                <a href="#" class="p-2 -mr-2 text-sm text-sky-500" type="reset" tabindex="1">
+                                    {{ t('login.form.password.forget') }}
+                                </a>
                             </div>
                             <input  type="password" name="pwd" id="pwd" v-model="state.password" :placeholder="t('login.form.password.placeholder')"
-class="block w-full px-4 py-3 rounded-md border border-gray-300 text-gray-600 transition duration-300
-    focus:ring-2 focus:ring-sky-300 focus:outline-none
-    invalid:ring-2 invalid:ring-red-400"
+                                    class="block w-full px-4 py-3 rounded-md border border-gray-300 text-gray-600 transition duration-300
+                                        focus:ring-2 focus:ring-sky-300 focus:outline-none
+                                        invalid:ring-2 invalid:ring-red-400"
+                                    tabindex="0"
                             >
                         </div>
 

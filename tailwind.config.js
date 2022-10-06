@@ -14,7 +14,19 @@ module.exports = {
       },
       colors: {
         'gray': colors.slate,
-        'light-blue': colors.sky,
+        'picton-blue': {
+          DEFAULT: '#41B3E7',
+          '50': '#E4F4FC',
+          '100': '#D2EDF9',
+          '200': '#AEDEF5',
+          '300': '#89D0F0',
+          '400': '#65C1EC',
+          '500': '#41B3E7',
+          '600': '#1B9BD5',
+          '700': '#1577A3',
+          '800': '#0E5271',
+          '900': '#082E40'
+        },
         'red': colors.rose,
       },
       outline: {

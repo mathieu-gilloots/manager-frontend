@@ -36,7 +36,7 @@
           <li>
             <router-link
               class="font-medium text-sm text-indigo-500 hover:text-indigo-600 flex items-center py-1 px-3"
-              to="/"
+              :to="{ name: 'user_view', params: {uuid: $auth.user().uuid } }"
               @click="dropdownOpen = false"
               >{{ $t('common.settings') }}</router-link
             >
