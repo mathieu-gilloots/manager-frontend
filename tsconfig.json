@@ -21,7 +21,8 @@
       "vite-plugin-vue-layouts/client",
       "unplugin-icons/types/vue",
       "@intlify/vite-plugin-vue-i18n/client",
-      "@websanova/vue-auth/types"
+      "@websanova/vue-auth/types",
+      "element-plus/global"
     ],
     "paths": {
       "~/*": ["src/*"],

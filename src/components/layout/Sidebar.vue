@@ -373,11 +373,11 @@
             <!-- Settings -->
             <sidebar-link-group
               v-slot="parentLink"
-              :activeCondition="currentRoute.fullPath.includes('settings')"
+              :activeCondition="currentRoute.fullPath.includes('user')"
             >
               <a
                 class="block text-gray-200 hover:text-white truncate transition duration-150"
-                :class="currentRoute.fullPath.includes('settings') && 'hover:text-gray-200'"
+                :class="currentRoute.fullPath.includes('user') && 'hover:text-gray-200'"
                 href="#"
                 @click.prevent="
                   store.$state.sidebarExpanded
@@ -407,10 +407,13 @@
               </a>
               <div class="lg:hidden lg:sidebar-expanded:block 2xl:block">
                 <ul class="pl-9 mt-1" :class="!parentLink.expanded && 'hidden'">
-                  <router-link to="/" custom v-slot="{ href, navigate }">
+                  <router-link
+                    :to="{ name: 'user_view', params: {uuid: $auth.user().uuid } }"
+                    custom v-slot="{ href, navigate, isExactActive }">
                     <li class="mb-1 last:mb-0">
                       <a
                         class="block text-gray-400 hover:text-gray-200 transition duration-150 truncate"
+                        :class="isExactActive && '!text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >

@@ -53,12 +53,35 @@ const auth = createAuth({
 
 import messages from '@intlify/vite-plugin-vue-i18n/messages';
 
+const shortLocale = navigator.language.substring(0 , 2);
+
 const i18n = createI18n({
-  locale: navigator.language,
+  locale: shortLocale,
   legacy: false,
   messages,
   globalInjection: true,
 });
+
+import { defineRule } from 'vee-validate';
+import AllRules from '@vee-validate/rules';
+Object.keys(AllRules).forEach(rule => {
+  defineRule(rule, AllRules[rule]);
+});
+
+
+import { configure } from 'vee-validate';
+import { localize } from '@vee-validate/i18n';
+
+//TODO: find a way to import all json at once.
+import fr from '@vee-validate/i18n/dist/locale/fr.json'
+configure({
+  generateMessage: localize({
+    fr
+  }),
+});
+
+import { setLocale } from '@vee-validate/i18n';
+setLocale(shortLocale);
 
 const head = createHead();
 

@@ -1,0 +1,75 @@
+{
+  "pages": {
+    "home": "Accueil",
+    "not-found": "Page non trouvée",
+    "user": {
+      "edit": {
+        "my-profile": "Mon Profil",
+        "edit-of": "Édition de : ",
+        "notifications": {
+          "success": {
+            "title": "Enregistré",
+            "message": "Les modifications ont été enregistrées."
+          },
+          "error": {
+            "title": "Erreur",
+            "message": "Une erreur est survenue, veuillez contacter notre service client."
+          }
+        }
+      }
+    }
+  },
+  "login": {
+    "header": "Me connecter à mon compte",
+    "form": {
+      "email": {
+        "title": "Email",
+        "placeholder": "Veuillez saisir votre adresse email"
+      },
+      "password": {
+        "title": "Mot de passe",
+        "placeholder": "Veuillez saisir votre mot de passe",
+        "forget": "Mot de passe oublié ?"
+      },
+      "submit": "Connexion"
+    },
+    "no-account": {
+      "no-account-yet": "Vous n'avez pas de compte ?",
+      "contact-your-csm": "Contactez votre chargé de compte"
+    }
+  },
+  "common": {
+    "logout": "Déconnexion",
+    "settings": "Paramètres",
+    "buttons": {
+      "validate": "Valider"
+    }
+  },
+  "sidebar": {
+    "my-account": {
+      "company": "Mon Entreprise",
+      "invoices": "Factures",
+      "contracts": "Mes Contrats"
+    }
+  },
+  "user": {
+    "label": {
+      "email": "Adresse e-mail",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "phoneNumber": "Téléphone fixe",
+      "cellPhoneNumber": "Téléphone portable"
+    },
+    "placeholder": {
+      "email": "email{'@'}entreprise.fr",
+      "firstName": "John",
+      "lastName": "Doe",
+      "phoneNumber": "+33100234567",
+      "cellPhoneNumber": "+33600234567"
+    },
+    "roles": {
+      "ROLE_SUPER_ADMIN": "Super-Administrateur"
+    }
+  }
+
+}
