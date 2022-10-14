@@ -1,4 +1,4 @@
-import CustomerInterface from "~/types/Customer/CustomerInterface";
+import { CustomerInterface } from "../Customer/CustomerInterface";
 
 export interface UserInterface {
   uuid: string,

@@ -6,7 +6,7 @@ import { UserInterface, UserFormValidation, UserFormValidationInterface } from "
 import { Field, Form, ErrorMessage } from 'vee-validate';
 
 useHead({
-  title: 'Dashboard | ITMG-Cloud',
+  title: 'Fiche Utilisateur | ITMG-Cloud',
 });
 
 const { t } = useI18n();

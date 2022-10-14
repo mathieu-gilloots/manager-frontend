@@ -17,6 +17,22 @@
           }
         }
       }
+    },
+    "customer": {
+      "edit": {
+        "my-profile": "Mon Entreprise",
+        "edit-of": "Édition de : ",
+        "notifications": {
+          "success": {
+            "title": "Enregistré",
+            "message": "Les modifications ont été enregistrées."
+          },
+          "error": {
+            "title": "Erreur",
+            "message": "Une erreur est survenue, veuillez contacter notre service client."
+          }
+        }
+      }
     }
   },
   "login": {
@@ -66,6 +82,27 @@
       "lastName": "Doe",
       "phoneNumber": "+33100234567",
       "cellPhoneNumber": "+33600234567"
+    },
+    "roles": {
+      "ROLE_SUPER_ADMIN": "Super-Administrateur"
+    }
+  },
+  "customer": {
+    "label": {
+      "corporateName": "Raison sociale",
+      "tradeName": "Dénomination commerciale",
+      "streetAddress": "Adresse",
+      "postalCode": "Code postal",
+      "locality": "Ville",
+      "country": "Pays"
+    },
+    "placeholder": {
+      "corporateName": "Mon entreprise",
+      "tradeName": "Autre nom de mon entreprise",
+      "streetAddress": "10 rue de Penthièvre",
+      "postalCode": "75008",
+      "locality": "Paris",
+      "country": "France"
     },
     "roles": {
       "ROLE_SUPER_ADMIN": "Super-Administrateur"
