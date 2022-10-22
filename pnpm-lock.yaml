@@ -17,7 +17,7 @@ specifiers:
   '@websanova/vue-auth': 4.2.0
   autoprefixer: 10.4.12
   axios: 1.1.3
-  element-plus: 2.2.18
+  element-plus: 2.2.19
   pinia: 2.0.23
   postcss: 8.4.18
   prettier: 2.7.1
@@ -49,7 +49,7 @@ dependencies:
   '@websanova/vue-auth': 4.2.0
   autoprefixer: 10.4.12_postcss@8.4.18
   axios: 1.1.3
-  element-plus: 2.2.18_vue@3.2.41
+  element-plus: 2.2.19_vue@3.2.41
   pinia: 2.0.23_typescript@4.8.4+vue@3.2.41
   postcss: 8.4.18
   tailwindcss: 3.1.8
@@ -850,8 +850,8 @@ packages:
     resolution: {integrity: sha512-KS6gPPGNrzpVv9HzFVq+Etd0AjZEPr5pvaTBn2yD6KV4+cKW4I0CJoJNgmTG6gUQPAMZ4wIPtcOuoou3qFAZCA==}
     dev: false
 
-  /element-plus/2.2.18_vue@3.2.41:
-    resolution: {integrity: sha512-2pK2zmVOwP14eFl3rGoR+3BWJwDyO+DZCvzjQ8L6qjUR+hVKwFhgxIcSkKJatbcHFw5Xui6UyN20jV+gQP7mLg==}
+  /element-plus/2.2.19_vue@3.2.41:
+    resolution: {integrity: sha512-uN0gt9lUus/IHzu5J6vkbYoYJgUtU05osdtFv9RO27bHKOG5GN7dH6uA3OKfkQQ6R2sV8ZxY1rc9PH1X8Dgrow==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
