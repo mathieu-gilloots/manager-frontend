@@ -8,7 +8,7 @@ specifiers:
   '@tailwindcss/typography': 0.5.7
   '@types/node': 18.8.5
   '@vee-validate/i18n': 4.7.0
-  '@vee-validate/rules': 4.7.0
+  '@vee-validate/rules': 4.7.1
   '@vitejs/plugin-vue': 3.1.2
   '@vue/compiler-sfc': 3.2.41
   '@vueuse/components': 9.3.1
@@ -42,7 +42,7 @@ dependencies:
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.1
   '@tailwindcss/typography': 0.5.7_tailwindcss@3.2.1
   '@vee-validate/i18n': 4.7.0
-  '@vee-validate/rules': 4.7.0
+  '@vee-validate/rules': 4.7.1
   '@vueuse/components': 9.3.1_vue@3.2.41
   '@vueuse/core': 9.3.1_vue@3.2.41
   '@vueuse/head': 0.9.8_vue@3.2.41
@@ -382,8 +382,8 @@ packages:
     resolution: {integrity: sha512-NwoqzTprINUGwt9QmF4QUS+tPbHH16wSrYHKl3Q6h1rJcGaPoQPc2dvR3Pp5n/QMU1Ey8vNPcj2QrCoEjuD67w==}
     dev: false
 
-  /@vee-validate/rules/4.7.0:
-    resolution: {integrity: sha512-DdJY7DJEvIr1i3rBSbd3Vc0c+sKt4/pT/IIHQmQ7tSviqjNTHOnUalbqa5t+4z5OOz8L71ic0lqJHlgaPRgMGQ==}
+  /@vee-validate/rules/4.7.1:
+    resolution: {integrity: sha512-LtXMa7zQyLv7XV5oILdEQfxhFyjmSvefKSmC+YGa/i/84SqPf+zAgmOdgHxLxw7Hayq3MiJYD7xuvVFDWjtkxA==}
     dev: false
 
   /@vitejs/plugin-vue/3.1.2_vite@3.1.8+vue@3.2.41:
