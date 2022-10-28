@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@iconify/json': 2.1.129
+  '@iconify/json': 2.1.130
   '@intlify/vite-plugin-vue-i18n': 6.0.3
   '@tailwindcss/aspect-ratio': 0.4.2
   '@tailwindcss/forms': 0.5.3
@@ -60,7 +60,7 @@ dependencies:
   vue-router: 4.1.5_vue@3.2.41
 
 devDependencies:
-  '@iconify/json': 2.1.129
+  '@iconify/json': 2.1.130
   '@intlify/vite-plugin-vue-i18n': 6.0.3_vite@3.1.8+vue-i18n@9.2.2
   '@types/node': 18.8.5
   '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.41
@@ -157,11 +157,11 @@ packages:
       '@floating-ui/core': 1.0.1
     dev: false
 
-  /@iconify/json/2.1.129:
-    resolution: {integrity: sha512-kL+50AlX9GDjV7/hpKqJjpMN0bpcRsu6XLCSXXzRCEzkG6V0m03dsoZxd/g8lhko/1yg3QaRRj23QachM4gkCA==}
+  /@iconify/json/2.1.130:
+    resolution: {integrity: sha512-5KwFLPgbrbztwZtCCnOMe95L3CU2UBFHY0uf5Hevz40eCizLjTHbQG/9HhV8rFdpjGsUn+05OoU3up+G1A36xA==}
     dependencies:
       '@iconify/types': 2.0.0
-      pathe: 0.3.8
+      pathe: 0.3.9
     dev: true
 
   /@iconify/types/2.0.0:
@@ -1782,10 +1782,6 @@ packages:
 
   /path-parse/1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
-
-  /pathe/0.3.8:
-    resolution: {integrity: sha512-c71n61F1skhj/jzZe+fWE9XDoTYjWbUwIKVwFftZ5IOgiX44BVkTkD+/803YDgR50tqeO4eXWxLyVHBLWQAD1g==}
-    dev: true
 
   /pathe/0.3.9:
     resolution: {integrity: sha512-6Y6s0vT112P3jD8dGfuS6r+lpa0qqNrLyHPOwvXMnyNTQaYiwgau2DP3aNDsR13xqtGj7rrPo+jFUATpU6/s+g==}
