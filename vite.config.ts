@@ -1,6 +1,5 @@
 import path from 'path';
 import { defineConfig } from 'vite';
-import eslint from 'vite-plugin-eslint';
 import vue from '@vitejs/plugin-vue';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
@@ -78,7 +77,7 @@ export default defineConfig({
       compositionOnly: true,
       include: [path.resolve(__dirname, './locales/**')],
     }),
-    eslint(),
+    //eslint(),
   ],
   resolve: {
     alias: {

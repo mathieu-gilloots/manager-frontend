@@ -32,6 +32,12 @@
             "message": "Une erreur est survenue, veuillez contacter notre service client."
           }
         }
+      },
+      "invoice": {
+        "title": "Mes Factures",
+        "empty-data": "Vous n'avez pas encore de factures.",
+        "info-title": "Informations",
+        "info-content": "Les factures indiquées sur fond rouge, sont à ce jour impayées.<br />Si vous venez d'effectuer un paiement par virement bancaire, ce dernier sera pris en compte sous quelques jours."
       }
     }
   },
@@ -103,9 +109,29 @@
       "postalCode": "75008",
       "locality": "Paris",
       "country": "France"
+    }
+  },
+  "invoice": {
+    "status": {
+      "unpaid": "Impayée",
+      "paid": "Payée",
+      "closed": "Abandonnée"
     },
-    "roles": {
-      "ROLE_SUPER_ADMIN": "Super-Administrateur"
+    "type": {
+      "invoice": "Facture",
+      "credit": "Avoir",
+      "deposit": "Facture d'acompte"
+    },
+    "labels": {
+      "name": "Numéro",
+      "date": "Date",
+      "totalHt": "Total HT",
+      "totalVat": "TVA",
+      "totalTtc": "Total TTC",
+      "totalPaid": "Déjà réglé",
+      "type": "Type",
+      "status": "Status",
+      "actions": "Actions"
     }
   }
 
