@@ -5,8 +5,8 @@
       class="w-8 h-8 flex items-center justify-center bg-gray-100 hover:bg-gray-200 transition duration-150 rounded-full"
       :class="{ 'bg-gray-200': dropdownOpen }"
       aria-haspopup="true"
-      @click.prevent="dropdownOpen = !dropdownOpen"
       :aria-expanded="dropdownOpen"
+      @click.prevent="dropdownOpen = !dropdownOpen"
     >
       <span class="sr-only">Notifications</span>
       <icon:fa-regular:bell />
@@ -84,7 +84,12 @@
 <script>
 export default {
   name: 'DropdownNotifications',
-  props: ['align'],
+  props: {
+    align: {
+      type: String,
+      default: 'left',
+    },
+  },
   setup() {
     const dropdownOpen = ref(false);
     const trigger = ref(null);

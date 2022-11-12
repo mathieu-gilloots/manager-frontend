@@ -1,0 +1,19 @@
+stages:
+  - quality
+
+es-lint:
+  image: node:19-alpine3.16
+  stage: quality
+  only:
+    - merge_requests
+  cache:
+    key: ${CI_MERGE_REQUEST_REF_PATH}
+    paths:
+      - .pnpm-store/
+      - .node_modules/
+  script:
+    - apk add git && npm install --location=global pnpm
+    - pnpm install
+    - pnpm run build # we need to buid to generate auto-import
+    - pnpm run lint
+  allow_failure: false

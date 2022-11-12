@@ -3,3 +3,9 @@
     <router-view />
   </main>
 </template>
+
+<script lang="ts">
+export default {
+  name: '404ErrorLayout',
+};
+</script>

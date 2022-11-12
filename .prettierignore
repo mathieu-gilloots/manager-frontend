@@ -1,0 +1,10 @@
+.idea
+.pnpm-store
+node_modules
+dist
+pnpm-lock.yaml
+public/site.webmanifest
+
+
+#To be removed when design will be finish on our side
+temp-dashboard

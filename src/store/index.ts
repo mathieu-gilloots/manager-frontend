@@ -1,8 +1,10 @@
 import { defineStore } from 'pinia';
 
-export const useStore = defineStore('store', {
+const useStore = defineStore('store', {
   state: () => ({
     sidebarOpen: false,
     sidebarExpanded: true,
   }),
 });
+
+export default useStore;

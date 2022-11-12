@@ -1,11 +1,10 @@
 <script setup lang="ts">
-
 useHead({
   title: 'Dashboard | ITMG-Cloud',
 });
 
 const { t } = useI18n();
-
+const auth = useAuth();
 </script>
 
 <script lang="ts">
@@ -20,13 +19,13 @@ export default {
       <p class="lg:text-left text-center">
         {{ t('intro.desc') }}
         <a href="https://tailwindcss.com/" class="text-blue-500 hover:underline">TailwindCSS</a>
-        {{ $auth.user() }}
+        {{ auth.user() }}
       </p>
       <p class="text-center">
         {{ t('intro.github') }}
-        <a class="text-blue-500 hover:underline" href="https://github.com/zynth17/vitailse"
-          >Github Repo</a
-        >
+        <a class="text-blue-500 hover:underline" href="https://github.com/zynth17/vitailse">
+          Github Repo
+        </a>
       </p>
     </div>
   </div>

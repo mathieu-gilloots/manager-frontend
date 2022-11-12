@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const store = useStore();
 </script>
 <script lang="ts">
@@ -22,11 +21,11 @@ export default {
           <router-view />
 
           <!-- Welcome banner -->
-          <!--					<WelcomeBanner />-->
+          <!-- <WelcomeBanner />-->
         </div>
       </main>
 
-      <!--			<Banner />-->
+      <!-- <Banner />-->
     </div>
   </div>
 </template>
