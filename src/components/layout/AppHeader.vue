@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 defineEmits(['toggle-sidebar']);
 
 const store = useStore();
@@ -40,9 +39,9 @@ onMounted(async () => {
           <!-- Hamburger button -->
           <button
             class="text-gray-500 hover:text-gray-600 lg:hidden"
-            @click.stop="$emit('toggle-sidebar')"
             aria-controls="sidebar"
             :aria-expanded="store.$state.sidebarOpen"
+            @click.stop="$emit('toggle-sidebar')"
           >
             <span class="sr-only">Open sidebar</span>
             <svg
@@ -61,13 +60,13 @@ onMounted(async () => {
         <div class="flex items-center space-x-3">
           <dropdown-notifications align="right" />
           <dropdown-help align="right" />
-          <!--					<button-->
-          <!--						class="mx-5 cursor-pointer focus:outline-none"-->
-          <!--						@click="toggleDarkMode"-->
-          <!--					>-->
-          <!--						<icon:bx:bx-moon class="w-6 h-6" v-if="!isDark" />-->
-          <!--						<icon:bx:bxs-moon class="w-6 h-6" v-else />-->
-          <!--					</button>-->
+          <!-- <button
+            class="mx-5 cursor-pointer focus:outline-none"
+            @click="toggleDarkMode"
+          >
+            <icon:bx:bx-moon class="w-6 h-6" v-if="!isDark" />
+            <icon:bx:bxs-moon class="w-6 h-6" v-else />
+          </button> -->
           <!-- Divider -->
           <hr class="w-px h-6 bg-gray-200" />
           <dropdown-profile align="right" />

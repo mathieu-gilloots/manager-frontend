@@ -1,5 +1,6 @@
 import path from 'path';
 import { defineConfig } from 'vite';
+import eslint from 'vite-plugin-eslint';
 import vue from '@vitejs/plugin-vue';
 import Pages from 'vite-plugin-pages';
 import Layouts from 'vite-plugin-vue-layouts';
@@ -8,7 +9,7 @@ import Icons from 'unplugin-icons/vite';
 import AutoImport from 'unplugin-auto-import/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import VueI18n from '@intlify/vite-plugin-vue-i18n';
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -20,7 +21,7 @@ export default defineConfig({
         IconsResolver({
           prefix: 'icon',
         }),
-        ElementPlusResolver()
+        ElementPlusResolver(),
       ],
     }),
     Icons({
@@ -49,15 +50,14 @@ export default defineConfig({
           'axios': [
             // default imports
             ['default', 'axios'], // import { default as axios } from 'axios',
-            'AxiosResponse'
+            'AxiosResponse',
           ],
           '@/store': [
-            'useStore'
+            // default imports
+            ['default', 'useStore'],
           ],
-          '@websanova/vue-auth/src/v3.js': [
-            'useAuth'
-          ]
-        }
+          '@websanova/vue-auth/src/v3.js': ['useAuth'],
+        },
       ],
 
       resolvers: [ElementPlusResolver()],
@@ -65,11 +65,11 @@ export default defineConfig({
       // custom resolvers
       // see https://github.com/antfu/unplugin-auto-import/pull/23/
       // resolvers: [],
-      // eslintrc: {
-      // 	enabled: true, // Default `false`
-      // 	filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
-      // 	globalsPropValue: true, // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
-      // },
+      eslintrc: {
+        enabled: true, // Default `false`
+        filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
+        globalsPropValue: true, // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
+      },
     }),
     Pages(),
     Layouts(),
@@ -78,6 +78,7 @@ export default defineConfig({
       compositionOnly: true,
       include: [path.resolve(__dirname, './locales/**')],
     }),
+    eslint(),
   ],
   resolve: {
     alias: {
@@ -90,7 +91,15 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    include: ['vue', 'vue-router', '@vueuse/core', '@vueuse/head'],
+    include: [
+      'vue',
+      'vue-router',
+      '@vueuse/core',
+      '@vueuse/head',
+      '@websanova/vue-auth/src/v3.js',
+      'element-plus/es',
+      'element-plus/es/components/notification/style/css',
+    ],
     exclude: ['vue-demi'],
   },
 });

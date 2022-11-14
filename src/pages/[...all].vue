@@ -4,7 +4,12 @@ const { t } = useI18n();
 useHead({
   title: t('pages.not-found'),
 });
+</script>
 
+<script lang="ts">
+export default {
+  name: '404ErrorPage',
+};
 </script>
 
 <template>
