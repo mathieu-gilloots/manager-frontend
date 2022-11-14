@@ -89,17 +89,11 @@
             <!-- Settings -->
             <sidebar-link-group
               v-slot="parentLink"
-              :active-condition="
-                currentRoute.fullPath.includes('user') || currentRoute.fullPath.includes('customer')
-              "
+              :active-condition="ACCOUNT_ROUTES_NAME.includes(currentRoute.name)"
             >
               <a
                 class="block text-gray-200 hover:text-white truncate transition duration-150"
-                :class="
-                  (currentRoute.fullPath.includes('user') ||
-                    currentRoute.fullPath.includes('customer')) &&
-                  'hover:text-gray-200'
-                "
+                :class="ACCOUNT_ROUTES_NAME.includes(currentRoute.name) && 'hover:text-gray-200'"
                 href="#"
                 @click.prevent="
                   store.$state.sidebarExpanded
@@ -167,10 +161,18 @@
                       </a>
                     </li>
                   </router-link>
-                  <router-link v-slot="{ href, navigate }" to="/" custom>
+                  <router-link
+                    v-slot="{ href, navigate, isExactActive }"
+                    :to="{
+                      name: 'customer_invoice_view',
+                      params: { customerUuid: auth.user().customer.uuid },
+                    }"
+                    custom
+                  >
                     <li class="mb-1 last:mb-0">
                       <a
                         class="block text-gray-400 hover:text-gray-200 transition duration-150 truncate"
+                        :class="isExactActive && '!text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >
@@ -222,6 +224,7 @@
 </template>
 
 <script setup lang="ts">
+import { ACCOUNT_ROUTES_NAME } from '../../includes/routing-utils';
 import ITMGLogo32 from '../../assets/logo-32.png';
 
 const store = useStore();
