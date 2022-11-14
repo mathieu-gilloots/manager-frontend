@@ -37,7 +37,7 @@ specifiers:
   unplugin-auto-import: 0.11.4
   unplugin-icons: 0.14.13
   unplugin-vue-components: 0.22.9
-  vee-validate: 4.7.2
+  vee-validate: 4.7.3
   vite: 3.2.3
   vite-plugin-eslint: ^1.8.1
   vite-plugin-pages: 0.27.1
@@ -64,7 +64,7 @@ dependencies:
   pinia: 2.0.23_zwu2zepfy3m6u2gunxlolp35gi
   postcss: 8.4.19
   tailwindcss: 3.2.4_postcss@8.4.19
-  vee-validate: 4.7.2_vue@3.2.45
+  vee-validate: 4.7.3_vue@3.2.45
   vue: 3.2.45
   vue-demi: 0.13.11_vue@3.2.45
   vue-i18n: 9.2.2_vue@3.2.45
@@ -3247,8 +3247,8 @@ packages:
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  /vee-validate/4.7.2_vue@3.2.45:
-    resolution: {integrity: sha512-SbrL1HUzpu6D6Og/Q+BFx0LN6B48Z7OrkvQCXwaRyoELEeWPO6SOx1v5t1Sg3OszNtiLH7Q6BgKj/7pzTK1wIw==}
+  /vee-validate/4.7.3_vue@3.2.45:
+    resolution: {integrity: sha512-1MwHLOzCrabSeChySZVVMamWStcucM1hHxapoebY9mJ7KWOvncMG19a7AlPl38zpE9pcD+G3CHKLvviGmTl5BQ==}
     peerDependencies:
       vue: ^3.0.0
     dependencies:
