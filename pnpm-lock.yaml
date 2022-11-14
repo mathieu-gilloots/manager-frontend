@@ -9,7 +9,7 @@ specifiers:
   '@types/node': 18.11.9
   '@typescript-eslint/eslint-plugin': ^5.42.0
   '@typescript-eslint/parser': ^5.42.0
-  '@vee-validate/i18n': 4.7.2
+  '@vee-validate/i18n': 4.7.3
   '@vee-validate/rules': 4.7.2
   '@vitejs/plugin-vue': 3.2.0
   '@vue/compiler-sfc': 3.2.41
@@ -52,7 +52,7 @@ dependencies:
   '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.2
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.2
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.2
-  '@vee-validate/i18n': 4.7.2
+  '@vee-validate/i18n': 4.7.3
   '@vee-validate/rules': 4.7.2
   '@vueuse/components': 9.5.0_vue@3.2.41
   '@vueuse/core': 9.4.0_vue@3.2.41
@@ -589,8 +589,8 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vee-validate/i18n/4.7.2:
-    resolution: {integrity: sha512-VG/G4BcqLT/MO7zYoYjFpmONoKzycEx1PqhPUXR4UMcc6Vkm3t2WwtwGufFA21VB2ytNF04ueTpS5Zt3h8JXzw==}
+  /@vee-validate/i18n/4.7.3:
+    resolution: {integrity: sha512-Zgddr5azPiLrLFISJBmEL9l4PJoFAzfootWii5wxoVbTt3NnwcA/DobK8fLtfOeUtvh6aNwQgAAt548fe4MpKg==}
     dev: false
 
   /@vee-validate/rules/4.7.2:
