@@ -14,7 +14,7 @@
     "@tailwindcss/typography": "0.5.8",
     "@vee-validate/i18n": "4.7.3",
     "@vee-validate/rules": "4.7.3",
-    "@vueuse/components": "9.5.0",
+    "@vueuse/components": "9.6.0",
     "@vueuse/core": "9.5.0",
     "@vueuse/head": "1.0.18",
     "@websanova/vue-auth": "4.2.0",
