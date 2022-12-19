@@ -16,7 +16,7 @@
     "@vee-validate/rules": "4.7.3",
     "@vueuse/components": "9.6.0",
     "@vueuse/core": "9.5.0",
-    "@vueuse/head": "1.0.18",
+    "@vueuse/head": "1.0.22",
     "@websanova/vue-auth": "4.2.0",
     "autoprefixer": "10.4.13",
     "axios": "1.1.3",
