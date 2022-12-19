@@ -16,7 +16,7 @@ specifiers:
   '@vueuse/components': 9.6.0
   '@vueuse/core': 9.5.0
   '@vueuse/head': 1.0.22
-  '@websanova/vue-auth': 4.2.0
+  '@websanova/vue-auth': 4.2.1
   autoprefixer: 10.4.13
   axios: 1.1.3
   element-plus: 2.2.25
@@ -57,7 +57,7 @@ dependencies:
   '@vueuse/components': 9.6.0_vue@3.2.45
   '@vueuse/core': 9.5.0_vue@3.2.45
   '@vueuse/head': 1.0.22_vue@3.2.45
-  '@websanova/vue-auth': 4.2.0
+  '@websanova/vue-auth': 4.2.1
   autoprefixer: 10.4.13_postcss@8.4.19
   axios: 1.1.3
   element-plus: 2.2.25_vue@3.2.45
@@ -844,8 +844,8 @@ packages:
       - vue
     dev: false
 
-  /@websanova/vue-auth/4.2.0:
-    resolution: {integrity: sha512-pUwOuW+JOsjpo96MXlU/h5dfymuuM+my1RIdwylg4DCsqQII7cfTe/21DGOQPKks686oc8342VWaiminJTJtSg==}
+  /@websanova/vue-auth/4.2.1:
+    resolution: {integrity: sha512-gc4WL3WzJMkj3wZmrBAP7U7WBAcVY0/a/YhCzMVR/iA1u/8QJlugq/320CRRbZ0Acz+qbGPhdm07IRE3U053yg==}
     dev: false
 
   /@zhead/schema/1.0.7:
