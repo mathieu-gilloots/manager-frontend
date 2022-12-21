@@ -14,7 +14,7 @@ specifiers:
   '@vitejs/plugin-vue': 3.2.0
   '@vue/compiler-sfc': 3.2.45
   '@vueuse/components': 9.8.2
-  '@vueuse/core': 9.7.0
+  '@vueuse/core': 9.8.2
   '@vueuse/head': 1.0.22
   '@websanova/vue-auth': 4.2.1
   autoprefixer: 10.4.13
@@ -55,7 +55,7 @@ dependencies:
   '@vee-validate/i18n': 4.7.3
   '@vee-validate/rules': 4.7.3
   '@vueuse/components': 9.8.2_vue@3.2.45
-  '@vueuse/core': 9.7.0_vue@3.2.45
+  '@vueuse/core': 9.8.2_vue@3.2.45
   '@vueuse/head': 1.0.22_vue@3.2.45
   '@websanova/vue-auth': 4.2.1
   autoprefixer: 10.4.13_postcss@8.4.20
@@ -89,7 +89,7 @@ devDependencies:
   prettier: 2.8.1
   sass: 1.57.1
   typescript: 4.9.4
-  unplugin-auto-import: 0.12.1_@vueuse+core@9.7.0
+  unplugin-auto-import: 0.12.1_@vueuse+core@9.8.2
   unplugin-icons: 0.14.15_@vue+compiler-sfc@3.2.45
   unplugin-vue-components: 0.22.12_vue@3.2.45
   vite: 3.2.5_gneikmxcpj2uc2xuqjosnroj4e
@@ -767,17 +767,6 @@ packages:
       - vue
     dev: false
 
-  /@vueuse/core/9.7.0_vue@3.2.45:
-    resolution: {integrity: sha512-/AGY/t7jJPxCyRoVTygNKoroTiCvRaaZIW+yeSlBCnI7QRpQ9cvXNTdNaSl3GvSyFbn83+XwZwEZvI1OpQfeGw==}
-    dependencies:
-      '@types/web-bluetooth': 0.0.16
-      '@vueuse/metadata': 9.7.0
-      '@vueuse/shared': 9.7.0_vue@3.2.45
-      vue-demi: 0.13.11_vue@3.2.45
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
-
   /@vueuse/core/9.8.2_vue@3.2.45:
     resolution: {integrity: sha512-aWiCmcYIpPt7xjuqYiceODEMHchDYthrJ4AqI+FXPZrR23PZOqdiktbUVyQl2kGlR3H4i9UJ/uimQrwhz9UouQ==}
     dependencies:
@@ -788,7 +777,6 @@ packages:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
-    dev: false
 
   /@vueuse/head/1.0.22_vue@3.2.45:
     resolution: {integrity: sha512-YmUdbzNdCnhmrAFxGnJS+Rixj+swE+TQC9OEaYDHIro6gE7W11jugcdwVP00HrA4WRQhg+TOQ4YcY2oL/PP1hw==}
@@ -802,20 +790,8 @@ packages:
       vue: 3.2.45
     dev: false
 
-  /@vueuse/metadata/9.7.0:
-    resolution: {integrity: sha512-M7WsAgw28FNtTH0bzsGuHEtJOPJqPpyeHS6PHq+8UesLgNjZ9waMAntiUrgUQlxt09M4i2lH7y9sRi0jkfeXGA==}
-
   /@vueuse/metadata/9.8.2:
     resolution: {integrity: sha512-N4E/BKS+9VsUeD4WLVRU1J2kCOLh+iikBcMtipFcTyL204132vDYHs27zLAVabJYGnhC0dIVGdhg9pbOZiY2TQ==}
-    dev: false
-
-  /@vueuse/shared/9.7.0_vue@3.2.45:
-    resolution: {integrity: sha512-pwmt1y3TJ2s5KqWmkv9ZKEV59GwuZQZk8XLiU+hGswz0jej318ozbea9E4A/A50ksyM26swSFr7sZ9llNPsZHg==}
-    dependencies:
-      vue-demi: 0.13.11_vue@3.2.45
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - vue
 
   /@vueuse/shared/9.8.2_vue@3.2.45:
     resolution: {integrity: sha512-ACjrPQzowd5dnabNJt9EoGVobco9/ENiA5qP53vjiuxndlJYuc/UegwhXC7KdQbPX4F45a50+45K3g1wNqOzmA==}
@@ -824,7 +800,6 @@ packages:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
-    dev: false
 
   /@websanova/vue-auth/4.2.1:
     resolution: {integrity: sha512-gc4WL3WzJMkj3wZmrBAP7U7WBAcVY0/a/YhCzMVR/iA1u/8QJlugq/320CRRbZ0Acz+qbGPhdm07IRE3U053yg==}
@@ -1265,7 +1240,7 @@ packages:
       '@popperjs/core': /@sxzz/popperjs-es/2.11.7
       '@types/lodash': 4.14.186
       '@types/lodash-es': 4.17.6
-      '@vueuse/core': 9.7.0_vue@3.2.45
+      '@vueuse/core': 9.8.2_vue@3.2.45
       async-validator: 4.2.5
       dayjs: 1.11.5
       escape-html: 1.0.3
@@ -3169,7 +3144,7 @@ packages:
       - rollup
     dev: true
 
-  /unplugin-auto-import/0.12.1_@vueuse+core@9.7.0:
+  /unplugin-auto-import/0.12.1_@vueuse+core@9.8.2:
     resolution: {integrity: sha512-J/3ZORq5YGKG+8D5vLLOgqaHNK77izlVN07mQ752yRLqBNDbJiwPRSnUwwYqH5N6rDay1SqnJCHaUdbJ9QMI2w==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -3180,7 +3155,7 @@ packages:
     dependencies:
       '@antfu/utils': 0.7.2
       '@rollup/pluginutils': 5.0.2
-      '@vueuse/core': 9.7.0_vue@3.2.45
+      '@vueuse/core': 9.8.2_vue@3.2.45
       local-pkg: 0.4.2
       magic-string: 0.27.0
       unimport: 1.1.0
