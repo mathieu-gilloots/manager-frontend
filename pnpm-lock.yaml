@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@iconify/json': 2.1.156
+  '@iconify/json': 2.1.157
   '@intlify/vite-plugin-vue-i18n': 6.0.3
   '@tailwindcss/aspect-ratio': 0.4.2
   '@tailwindcss/forms': 0.5.3
@@ -71,7 +71,7 @@ dependencies:
   vue-router: 4.1.6_vue@3.2.45
 
 devDependencies:
-  '@iconify/json': 2.1.156
+  '@iconify/json': 2.1.157
   '@intlify/vite-plugin-vue-i18n': 6.0.3_vite@4.0.3+vue-i18n@9.2.2
   '@types/node': 18.11.17
   '@typescript-eslint/eslint-plugin': 5.47.0_ncmi6noazr3nzas7jxykisekym
@@ -396,8 +396,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify/json/2.1.156:
-    resolution: {integrity: sha512-QaLf/XSPRe6i35Z9WIRBxlWOLykDXNnEGYFf+9E+GWLmRqVQ2VNyTsEo6CNZqP5eGQRDPJyNhd+2vH+gbehGDg==}
+  /@iconify/json/2.1.157:
+    resolution: {integrity: sha512-hMfejLLvAtivI1PSKVbBvTGtIeX/II6DPLcGxJFTIzDA/HhJ/uZxS+Y6XeZPeH7rl+Vjm2X5gNnrYyiosroonw==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 0.3.9
