@@ -18,7 +18,7 @@ specifiers:
   '@vueuse/head': 1.0.22
   '@websanova/vue-auth': 4.2.1
   autoprefixer: 10.4.13
-  axios: 1.2.1
+  axios: 1.2.2
   element-plus: 2.2.27
   eslint: 8.30.0
   eslint-config-airbnb-base: 15.0.0
@@ -59,7 +59,7 @@ dependencies:
   '@vueuse/head': 1.0.22_vue@3.2.45
   '@websanova/vue-auth': 4.2.1
   autoprefixer: 10.4.13_postcss@8.4.20
-  axios: 1.2.1
+  axios: 1.2.2
   element-plus: 2.2.27_vue@3.2.45
   pinia: 2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
   postcss: 8.4.20
@@ -1130,8 +1130,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /axios/1.2.1:
-    resolution: {integrity: sha512-I88cFiGu9ryt/tfVEi4kX2SITsvDddTajXTOFmt2uK1ZVA8LytjtdeyefdQWEf5PU8w+4SSJDoYnggflB5tW4A==}
+  /axios/1.2.2:
+    resolution: {integrity: sha512-bz/J4gS2S3I7mpN/YZfGFTqhXTYzRho8Ay38w2otuuDR322KzFIWm/4W2K6gIwvWaws5n+mnb7D1lN9uD+QH6Q==}
     dependencies:
       follow-redirects: 1.15.2
       form-data: 4.0.0
