@@ -20,7 +20,7 @@
     "@websanova/vue-auth": "4.2.1",
     "autoprefixer": "10.4.13",
     "axios": "1.2.2",
-    "element-plus": "2.2.27",
+    "element-plus": "2.2.28",
     "pinia": "2.0.28",
     "postcss": "8.4.20",
     "tailwindcss": "3.2.4",

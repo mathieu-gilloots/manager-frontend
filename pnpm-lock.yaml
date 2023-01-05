@@ -19,7 +19,7 @@ specifiers:
   '@websanova/vue-auth': 4.2.1
   autoprefixer: 10.4.13
   axios: 1.2.2
-  element-plus: 2.2.27
+  element-plus: 2.2.28
   eslint: 8.30.0
   eslint-config-airbnb-base: 15.0.0
   eslint-config-airbnb-typescript: 17.0.0
@@ -60,7 +60,7 @@ dependencies:
   '@websanova/vue-auth': 4.2.1
   autoprefixer: 10.4.13_postcss@8.4.20
   axios: 1.2.2
-  element-plus: 2.2.27_vue@3.2.45
+  element-plus: 2.2.28_vue@3.2.45
   pinia: 2.0.28_prq2uz4lho2pwp6irk4cfkrxwu
   postcss: 8.4.20
   tailwindcss: 3.2.4_postcss@8.4.20
@@ -1413,8 +1413,8 @@ packages:
     resolution: {integrity: sha512-KS6gPPGNrzpVv9HzFVq+Etd0AjZEPr5pvaTBn2yD6KV4+cKW4I0CJoJNgmTG6gUQPAMZ4wIPtcOuoou3qFAZCA==}
     dev: false
 
-  /element-plus/2.2.27_vue@3.2.45:
-    resolution: {integrity: sha512-P04HDOZBYDdvlYuleuCZRULzAc5xJVOBfLDK9xWxVo0vyo8ntdaXS5sTU+/76vrNzuO3FhLn9kvrsbiJEVa1jg==}
+  /element-plus/2.2.28_vue@3.2.45:
+    resolution: {integrity: sha512-BsxF7iEaBydmRfw1Tt++EO9jRBjbtJr7ZRIrnEwz4J3Cwa1IzHCNCcx3ZwcYTlJq9CYFxv94JnbNr1EbkTou3A==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
