@@ -6,6 +6,12 @@
 //@import 'additional-styles/flatpickr.scss';
 @import 'additional-styles/theme.scss';
 
+@import 'element-plus/theme-chalk/src/base';
+@import 'element-plus/theme-chalk/src/tabs';
+@import 'element-plus/theme-chalk/src/tab-pane.scss';
+@import 'element-plus/theme-chalk/src/table.scss';
+@import 'element-plus/theme-chalk/src/table-column.scss';
+
 @tailwind base;
 @tailwind components;
 
