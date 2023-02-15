@@ -38,6 +38,42 @@
         "empty-data": "Vous n'avez pas encore de factures.",
         "info-title": "Informations",
         "info-content": "Les factures indiquées sur fond rouge, sont à ce jour impayées.<br />Si vous venez d'effectuer un paiement par virement bancaire, ce dernier sera pris en compte sous quelques jours."
+      },
+      "contract": {
+        "title": "Mes Contrats",
+        "tabs": {
+          "to-validate": {
+            "title": "Contrats à valider",
+            "empty-data": "Vous n'avez pas de contrats à valider."
+          },
+          "validated": {
+            "title": "Contrats validés",
+            "empty-data": "Vous n'avez pas encore validé de contrat."
+          }
+        },
+        "sign": {
+          "title": "Signer un contrat",
+          "error": {
+            "title": "Une erreur est survenue.",
+            "contractAlreadySigned": "Le contrat selectionné a déjà été signé.",
+            "contractNotAvailableForCustomer": "Le contrat selectionné n'est pas disponible pour votre compte client.",
+            "phoneNumberNotFoundOrIncorrect": "Votre numéro de téléphone portable n'est pas rempli ou n'est pas valide.<br />Vous pouvez mettre à jour vos informations sur la page \"Paramètres\".",
+            "incorrectCode": "Le code saisi est incorrect."
+          },
+          "info": {
+            "process": "La signature d'un contrat s'effectue via l'envoi d'un code sur votre téléphone portable.<br />- Cliquez sur 'Recevoir le code'<br />- Saisir le code reçu et cliquez sur 'Signer'",
+            "validated": "Le contrat à bien été signé, Merci !"
+          },
+          "buttons": {
+            "receive-code": "Recevoir le code",
+            "validate": "Valider",
+            "sending": "Envoi en cours",
+            "validating": "Validation en cours"
+          },
+          "input": {
+            "code": "Saisir le code"
+          }
+        }
       }
     }
   },
@@ -133,6 +169,18 @@
       "status": "Status",
       "actions": "Actions"
     }
+  },
+  "contract": {
+    "labels": {
+      "name": "Service",
+      "date": "Date de prise d'effet",
+      "actions": "Actions"
+    }
+  },
+  "customerContractAgreement": {
+    "labels": {
+      "validatedAt": "Date de validation",
+      "validatedBy": "Validé par"
+    }
   }
-
 }

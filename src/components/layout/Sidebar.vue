@@ -143,6 +143,7 @@
                     </li>
                   </router-link>
                   <router-link
+                    v-if="auth.user().customer"
                     v-slot="{ href, navigate, isExactActive }"
                     :to="{ name: 'customer_view', params: { uuid: auth.user().customer.uuid } }"
                     custom
@@ -162,6 +163,7 @@
                     </li>
                   </router-link>
                   <router-link
+                    v-if="auth.user().customer"
                     v-slot="{ href, navigate, isExactActive }"
                     :to="{
                       name: 'customer_invoice_view',
@@ -183,10 +185,19 @@
                       </a>
                     </li>
                   </router-link>
-                  <router-link v-slot="{ href, navigate }" to="/" custom>
+                  <router-link
+                    v-if="auth.user().customer"
+                    v-slot="{ href, navigate, isExactActive }"
+                    :to="{
+                      name: 'customer_contract_view',
+                      params: { customerUuid: auth.user().customer.uuid },
+                    }"
+                    custom
+                  >
                     <li class="mb-1 last:mb-0">
                       <a
                         class="block text-gray-400 hover:text-gray-200 transition duration-150 truncate"
+                        :class="isExactActive && '!text-indigo-500'"
                         :href="href"
                         @click="navigate"
                       >

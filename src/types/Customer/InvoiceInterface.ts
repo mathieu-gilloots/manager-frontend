@@ -14,6 +14,7 @@ export interface InvoicePaginatedInterface {
   totalInvoices: number;
   invoices: InvoiceInterface[];
 }
+
 export type InvoiceInterfaceKeysOfType<T, TProp> = {
   [P in keyof T]: T[P] extends TProp ? P : never;
 }[keyof T];
