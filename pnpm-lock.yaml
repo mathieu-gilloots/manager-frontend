@@ -27,7 +27,7 @@ specifiers:
   eslint-plugin-import: 2.26.0
   eslint-plugin-prettier: 4.2.1
   eslint-plugin-vue: 9.9.0
-  eslint-plugin-vuejs-accessibility: 2.0.0
+  eslint-plugin-vuejs-accessibility: 2.1.0
   pinia: 2.0.30
   postcss: 8.4.21
   prettier: 2.8.2
@@ -85,7 +85,7 @@ devDependencies:
   eslint-plugin-import: 2.26.0_zk4rog3giqiqsb5pfxnkbcxnl4
   eslint-plugin-prettier: 4.2.1_iu5s7nk6dw7o3tajefwfiqfmge
   eslint-plugin-vue: 9.9.0_eslint@8.31.0
-  eslint-plugin-vuejs-accessibility: 2.0.0_eslint@8.31.0
+  eslint-plugin-vuejs-accessibility: 2.1.0_eslint@8.31.0
   prettier: 2.8.2
   sass: 1.57.1
   typescript: 4.9.4
@@ -1064,7 +1064,7 @@ packages:
   /aria-query/5.1.3:
     resolution: {integrity: sha512-R5iJ5lkuHybztUfuOAznmboyjWq8O6sqNqtK7CLOqdydi54VNbORp49mb14KbWgG1QD3JFO9hJdZ+y4KutfdOQ==}
     dependencies:
-      deep-equal: 2.0.5
+      deep-equal: 2.1.0
     dev: true
 
   /array-includes/3.1.5:
@@ -1299,26 +1299,6 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
-    dev: true
-
-  /deep-equal/2.0.5:
-    resolution: {integrity: sha512-nPiRgmbAtm1a3JsnLCf6/SLfXcjyN5v8L1TXzdCmHrXJ4hx+gW/w1YCcn7z8gJtSiDArZCgYtbao3QqLm/N1Sw==}
-    dependencies:
-      call-bind: 1.0.2
-      es-get-iterator: 1.1.2
-      get-intrinsic: 1.1.3
-      is-arguments: 1.1.1
-      is-date-object: 1.0.5
-      is-regex: 1.1.4
-      isarray: 2.0.5
-      object-is: 1.1.5
-      object-keys: 1.1.1
-      object.assign: 4.1.4
-      regexp.prototype.flags: 1.4.3
-      side-channel: 1.0.4
-      which-boxed-primitive: 1.0.2
-      which-collection: 1.0.1
-      which-typed-array: 1.1.8
     dev: true
 
   /deep-equal/2.1.0:
@@ -1684,8 +1664,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-vuejs-accessibility/2.0.0_eslint@8.31.0:
-    resolution: {integrity: sha512-mjbXnncDT9+5K+/QXXhOVWhEU6OOJck/JNlC6tewo3R+Kzsbaecyq3ylN1NqmyKo78vsgun34JLd+vGdxSPFWQ==}
+  /eslint-plugin-vuejs-accessibility/2.1.0_eslint@8.31.0:
+    resolution: {integrity: sha512-TM0JWrpOUOmka3v83QkH5uYkwUUNWg2RPa6imnBU1El2kRv0Ws1e9N84VPW2HLLTW+Fo+XsdKmiKLXwtIhCqsg==}
     peerDependencies:
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
