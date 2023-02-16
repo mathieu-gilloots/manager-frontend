@@ -26,7 +26,7 @@ specifiers:
   eslint-config-prettier: 8.6.0
   eslint-plugin-import: 2.26.0
   eslint-plugin-prettier: 4.2.1
-  eslint-plugin-vue: 9.8.0
+  eslint-plugin-vue: 9.9.0
   eslint-plugin-vuejs-accessibility: 2.0.0
   pinia: 2.0.28
   postcss: 8.4.21
@@ -84,7 +84,7 @@ devDependencies:
   eslint-config-prettier: 8.6.0_eslint@8.31.0
   eslint-plugin-import: 2.26.0_zk4rog3giqiqsb5pfxnkbcxnl4
   eslint-plugin-prettier: 4.2.1_iu5s7nk6dw7o3tajefwfiqfmge
-  eslint-plugin-vue: 9.8.0_eslint@8.31.0
+  eslint-plugin-vue: 9.9.0_eslint@8.31.0
   eslint-plugin-vuejs-accessibility: 2.0.0_eslint@8.31.0
   prettier: 2.8.2
   sass: 1.57.1
@@ -1666,8 +1666,8 @@ packages:
       prettier-linter-helpers: 1.0.0
     dev: true
 
-  /eslint-plugin-vue/9.8.0_eslint@8.31.0:
-    resolution: {integrity: sha512-E/AXwcTzunyzM83C2QqDHxepMzvI2y6x+mmeYHbVDQlKFqmKYvRrhaVixEeeG27uI44p9oKDFiyCRw4XxgtfHA==}
+  /eslint-plugin-vue/9.9.0_eslint@8.31.0:
+    resolution: {integrity: sha512-YbubS7eK0J7DCf0U2LxvVP7LMfs6rC6UltihIgval3azO3gyDwEGVgsCMe1TmDiEkl6GdMKfRpaME6QxIYtzDQ==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
